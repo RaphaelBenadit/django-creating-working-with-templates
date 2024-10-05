@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Web Applications using Django Framework</title>
+ <link rel="shortcut icon" href="">
+<style>
+
+</style>
+</head>
+<body>
+<h1>Kamaraj College of Engineering and Technology</h1>
+<h2>Web Applications using Django Framework</h2>
+ <h4>Creating and Working with Template</h4>
+
+ <h3>ODD or EVEN Checker</h3>
+ <form method="get">
+ <label>Enter a number:</label>
+ <input type="text" name="number">
+ <button type="submit">Check</button>
+ </form>
+<p>{{ result }}</p>
+
+ <h3>Name Filter</h3>
+ <form method="get" action="/filter/">
+ <label>Enter a character:</label>
+ <input type="text" name= "char">
+ <button type="submit">Search</button>
+ </form>
+<ul>
+ {% for name in names %}
+ <li>{{ name }}</li>
+ {% endfor %}
+ </ul>
+</body>
+</html>
